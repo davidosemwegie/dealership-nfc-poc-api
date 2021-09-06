@@ -1,0 +1,7 @@
+{
+  "extends": "eslint-config-neo/config-backend",
+  "rules": {
+    "jest/no-deprecated-functions": "off",
+    "jest/valid-expect": "off"
+  }
+}

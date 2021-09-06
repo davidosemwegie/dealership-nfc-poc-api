@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"module": "commonjs",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"resolveJsonModule": true,
+		"target": "es6",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"outDir": "build",
+		"baseUrl": ".",
+		"typeRoots": ["src/types", "node_modules/@types"],
+		"paths": {
+			"*": ["*", "node_modules/*", "src/*"]
+		}
+	},
+	"include": ["src/**/*", "lib/**/*"],
+	"exclude": ["**/__mocks__/**"]
+}
