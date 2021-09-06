@@ -15,7 +15,8 @@
     "format:check": "prettier --check \"**/*.{ts,js,json,graphql,gql,yaml,yml,md}\"",
     "test": "NODE_ENV=test TZ=UTC jest",
     "script": "cd src/scripts && ts-node",
-    "migrate": "cd src/migrations && ts-node"
+    "migrate": "cd src/migrations && ts-node",
+    "deploy": "git add . && git commit -m 'deploying to heroku' && git push heroku master"
   },
   "keywords": [],
   "author": "David Osemwegie",
@@ -58,6 +59,7 @@
     "pino-pretty": "^4.7.1",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.0.3",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "nodemon": "^2.0.7"
   }
 }
