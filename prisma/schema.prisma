@@ -2,10 +2,18 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["mongoDb"]
+}
+
+model Link {
+  id  String  @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  label String
+  url String
+  scanned Boolean
 }

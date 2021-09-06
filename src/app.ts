@@ -8,6 +8,7 @@ import cors from 'cors';
 
 import { PORT } from './config';
 import { errorHandler, logErrors } from './middleware';
+import { linkRouter } from './routes';
 
 const app = express();
 
@@ -15,11 +16,12 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/status', (req: Request, res: Response) => {
   res.json({ message: `Dealership NFC API is running in: ${APP_ENV} mode` });
 });
 
 //Routes
+app.use('/', linkRouter);
 
 //Error handle middleware
 app.use(logErrors);
