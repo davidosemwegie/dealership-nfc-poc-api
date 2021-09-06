@@ -29,5 +29,5 @@ app.use(errorHandler);
 const port = PORT || 8000;
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Dealership NFC API is running in: ${APP_ENV} mode`);
 });

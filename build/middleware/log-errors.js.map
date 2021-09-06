@@ -1,0 +1,1 @@
+{"version":3,"file":"log-errors.js","sourceRoot":"","sources":["../../src/middleware/log-errors.ts"],"names":[],"mappings":";;;AAEA,oCAAkC;AAElC,SAAgB,SAAS,CAAC,GAAU,EAAE,IAAa,EAAE,IAAc,EAAE,IAAkB;IACrF,cAAM,CAAC,IAAI,CAAC,GAAG,CAAC,CAAC;IAEjB,IAAI,CAAC,GAAG,CAAC,CAAC;AACZ,CAAC;AAJD,8BAIC"}
